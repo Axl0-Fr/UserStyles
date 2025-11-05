@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name         EcoleDirecte - NavBar on top
+@namespace    USO Archive
+@author       Axl0_Fr
+@description  Moves the EcolDirecte navigation bar to the top :)
+@version      1.0
+@license      CC BY-SA 4.0
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain(ecoledirecte.com) {
+	#container-menu {
+		position: unset!important;
+		height: 95px!important;
+		width: 100%!important;
+		background: none!important;
+		box-shadow: none!important;
+		margin-top: 14px!important;
+		border-bottom-left-radius: 32px;
+		border-bottom-right-radius: 32px;
+	}
+
+	ed-menu-block-item {
+		display: inline-block!important;
+		width: 64px!important;
+	}
+	div > a > i::before {
+		align-self: center;
+		align-content: center;
+		align-items: center;
+	}
+
+
+
+	.ed-menu-list-wrapper li a span.item-name {
+		opacity: 1!important;
+		left: 0px!important;
+		width: 100%!important;
+		text-align: center!important;
+		font-size: 10px;
+		top: -10px!important;
+		color: #fff!important;
+		display: none;
+	}
+
+	.profile {
+		display: none!important;
+	}
+
+	.ed-menu-list-wrapper li {
+		display: inline-block!important;
+	}
+
+
+
+	.ed-menu-list-wrapper li a:hover::before {
+		display: none!important;
+	}
+
+	.ed-menu-list-wrapper li a.item-actif {
+		border-radius: 10px!important;
+		width: 100%!important;
+		margin-left: 16px!important;
+		margin-right: 16px!important;
+	}
+
+	#header-commun {
+		position: fixed!important;
+		top: 0px!important;
+		width: 100%!important;
+		margin-left: -110px!important;
+		height: 40px!important;
+		z-index: 75!important;
+	}
+	.ed-espace-title {
+		display: none!important;
+	}
+
+	.ed-menu-list-wrapper {
+		margin: 40px 50px 20px!important;
+	}
+
+	.item-actif > i {
+		width: 100%!important;
+	}
+
+	.invisible {
+		visibility: visible!important;
+	}
+
+	.ed-menu-badge {
+		left: 60px!important;
+	}
+}
